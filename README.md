@@ -1,1 +1,1 @@
-https://noobiecoderlol.github.io/Snake-game-KREP/
+](https://noobiecoderlol.github.io/snake-gamez/)

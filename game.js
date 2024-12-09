@@ -305,3 +305,30 @@ gameLoop();
 // Ensure the "Play Again" button calls the resetGame function
 document.getElementById("reset-button").onclick = resetGame; // Add an event listener to the button
 
+// ... existing code ...
+
+// Add keyboard controls
+document.addEventListener('keydown', function(event) {
+    switch (event.key) {
+        case 'ArrowUp':
+            if (direction.y === 0) { // Prevent moving directly opposite to current direction
+                direction = { x: 0, y: -gridSize };
+            }
+            break;
+        case 'ArrowDown':
+            if (direction.y === 0) {
+                direction = { x: 0, y: gridSize };
+            }
+            break;
+        case 'ArrowLeft':
+            if (direction.x === 0) {
+                direction = { x: -gridSize, y: 0 };
+            }
+            break;
+        case 'ArrowRight':
+            if (direction.x === 0) {
+                direction = { x: gridSize, y: 0 };
+            }
+            break;
+    }
+});

@@ -65,9 +65,9 @@ let touchEndY = 0;
 
 // Sound effects setup
 const sounds = {
-    eat: new Audio('sounds/eat.mp3'),
-    gameOver: new Audio('sounds/gameover.mp3'),
-    background: new Audio('sounds/background.mp3')
+    eat: new Audio('eat.mp3'),
+    gameOver: new Audio('gameover.mp3'),
+    background: new Audio('background.mp3')
 };
 
 // Set volume for each sound
